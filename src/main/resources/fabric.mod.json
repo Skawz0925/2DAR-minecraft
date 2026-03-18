@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "detrix-kek",
+  "version": "${version}",
+  "name": "detrix-1.21.8",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "kek.detrix.fabricpack.MainDataGenerator"
+    ],
+    "client": [
+      "kek.detrix.fabricpack.MainClient"
+    ],
+    "main": [
+      "kek.detrix.Main"
+    ]
+  },
+  "mixins": [
+    "detrix-kek.mixins.json"
+  ],
+  "accessWidener": "detrix-kek.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
